@@ -1,47 +1,22 @@
-﻿using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class ScoreOff : MonoBehaviour {
 
-    public GameObject Score;
-    public GameObject CompleteTutorialUI;
-    public GameObject Player;
+	public GameObject movement;
+	public GameObject score;
 
-    public static ScoreOff instance;
+	public void TotalSystemOff()
+	{
+		score.SetActive (false);
+		movement.SetActive(false);
+	}
 
- /*   void Awake()
-    {
-
-        if(instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this);
-        }
-        else if (this != instance)
-        {
-            Destroy(this.gameObject);
-        }
-    
-
-        DontDestroyOnLoad(this.gameObject); 
-
-    } 
-    */
-        public void TotalSystemOff()
-    {
-        Score.SetActive(false);
-        Player.GetComponent<Movement>().enabled = false;
-    }
-
-    public void TotalSystemOn()
-    {
-        Score.SetActive(true);
-        Player.GetComponent<Movement>().enabled = true;
-    }
-
-    public void StartTutorial()
-    {
-        CompleteTutorialUI.SetActive(false);
-    }
+	public void TotalSystemOn()
+	{
+		score.SetActive (true);
+		movement.SetActive(true);
+	}
 }
-
+		

@@ -25,7 +25,7 @@ EditorBuildSettings:
     guid: bac9bd34972522a45b4ac8b05ef0dc5f
   - enabled: 1
     path: Assets/Level05.unity
-    guid: 00000000000000000000000000000000
+    guid: da3246e054e86de48af3c87f9bbd297e
   - enabled: 1
     path: Assets/Credits.unity
     guid: 75514d6a98361864b9afbbc827d77598

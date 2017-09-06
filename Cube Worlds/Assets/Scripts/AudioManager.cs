@@ -37,6 +37,7 @@ public class AudioManager : MonoBehaviour {
         {
             instance.UnPause("ThemeMusic");
             instance.Stop("Falling");
+			instance.Stop("CongratsMusic");
             Destroy(this.gameObject);
             return;
         }
