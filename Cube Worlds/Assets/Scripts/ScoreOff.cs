@@ -6,6 +6,7 @@ public class ScoreOff : MonoBehaviour {
 
 	public GameObject movement;
 	public GameObject score;
+	public GameObject Tutorial;
 
 	public void TotalSystemOff()
 	{
@@ -17,6 +18,11 @@ public class ScoreOff : MonoBehaviour {
 	{
 		score.SetActive (true);
 		movement.SetActive(true);
+	}
+
+	public void StartTutorial()
+	{
+		Tutorial.SetActive (false);
 	}
 }
 		
